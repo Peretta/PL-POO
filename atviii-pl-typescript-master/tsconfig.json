@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                       // Define o padrão de JavaScript gerado
+    "module": "ESNext",                      // Usa módulos ES para melhor compatibilidade
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Suporte para recursos modernos
+    "jsx": "react-jsx",                      // Habilita suporte para JSX no React 17+
+    "strict": true,                          // Habilita verificações mais rigorosas
+    "esModuleInterop": true,                 // Melhor compatibilidade com módulos CommonJS
+    "skipLibCheck": true,                    // Ignora checagem de tipos em arquivos de biblioteca
+    "moduleResolution": "node",             // Resolve módulos como o Node.js
+    "resolveJsonModule": true,              // Permite importação de arquivos JSON
+    "isolatedModules": true,                // Requer que cada arquivo seja tratado como um módulo
+    "allowSyntheticDefaultImports": true    // Permite importações padrão de módulos sem `default`
+  },
+  "include": ["src"],                       // Inclui arquivos TypeScript dentro do diretório `src`
+  "exclude": ["node_modules", "dist"]       // Exclui essas pastas
+}
